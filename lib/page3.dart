@@ -15,7 +15,7 @@ class Page3 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              "Discovery1234",
+              "Discovery",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
@@ -23,7 +23,7 @@ class Page3 extends StatelessWidget {
               "the perfect healthy juices",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             TextField(
               decoration: InputDecoration(
                 prefix: Icon(Icons.search, color: Colors.black45, size: 20),
@@ -36,7 +36,7 @@ class Page3 extends StatelessWidget {
                 hintText: "search",
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             Text(
               "our top picks",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),

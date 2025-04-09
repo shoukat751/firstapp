@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                   CircleAvatar(radius: 30),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               SearchBar(
                 padding: const WidgetStatePropertyAll<EdgeInsets>(
                   EdgeInsets.symmetric(horizontal: 16.0),
@@ -43,10 +43,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Row(
-                children: [Text("popular places"), Text("view")],
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("popular places"), Text("view")],
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -78,23 +78,19 @@ class HomeScreen extends StatelessWidget {
                             "https://www.datocms-assets.com/101439/1703136003-beautiful-mountain-of-japan-mount-fuji.webp?auto=format&fit=crop&h=800&w=1200",
                           ),
                         ),
-                        
                       ),
-                      child: Column(
-                        
-                        children: [
-                        
-                          Row
-                          (
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [Icon(Icons.favorite)],),
-                          Text("fuji mountain"),
-                    
-                        ],
-                      ),
-                    
+
                       height: 300,
                       width: 200,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [Icon(Icons.favorite)],
+                          ),
+                          Text("fuji mountain"),
+                        ],
+                      ),
                     ),
                   ],
                 ),
